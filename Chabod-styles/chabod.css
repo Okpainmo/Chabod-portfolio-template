@@ -7,20 +7,34 @@ body {
     font-family: Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 .social-icons-case {
-    min-width: 200px;
-    text-align: left;
+    min-width: 300px;
+    display: flex;
+    justify-content: space-between;
+    /* text-align: left; */
 }
+.bold {
+    font-weight: bold;
+}
+/* .strong {
+    font-st;
+} */
 .social-icons {
     width: 35px;
     height: 35px;
-    padding: 3px 0;
+    padding: 4px 0;
     display: inline-block;
     border-radius: 100%;
-    font-size: 18px;
-    margin: 0 10px;
+    font-size: 17px;
     background-color: transparent;
     border: 2px black solid;
     text-align: center;
+}
+.social-icons-case a, .icons-case a {
+    text-decoration: none;
+}
+.social-icons:hover, .icons-ball:hover {
+    transform: scale(1.2);
+    transition: .5s ease-in-out transform;
 }
 .icon {
     width: 20px;
@@ -30,8 +44,11 @@ body {
     display: inline-block;
     margin: 0 auto;
 }
+/* nav {
+    background-color: rgba(255, 255, 255, 0.8);
+} */
 .navbar-brand img{
-    width: 70px!important;
+    width: 70px;
     height: 80px;
 }
 .nav-case {
@@ -49,7 +66,7 @@ nav li:hover {
     transition: background-color .5s ease-in-out;
 }
 .nav-link {
-    color: #545454!important;
+    color: black!important;
 }
 header {
     background-image: url(../Images/pix13.jpg);
@@ -57,27 +74,36 @@ header {
     width: 100%;
     background-size: cover;
 }
-.block {
-    display: block;
+.top-offset {
+ margin-top: 100px;
 }
 .banner-overlay {
     width: inherit;
     min-height: inherit;
+    padding-top: 120px;
     background-color: rgba(255, 255, 255, 0.8);
+}
+.navbar-toggler {
+    border: none;
+}
+.navbar-toggler:focus {
+    outline: none;
 }
 .seller-intro {
     min-width: 200px;
     padding: 0 0 50px;  
     margin: 0 auto;
-    color: #545454;
+    color: black;
 }
 .seller-image-case {
-    width: 200px;
+    width: 230px;
     margin: 0 auto;
 }
 .seller-intro img{
-    width: 200px;
-    margin: 50px auto 20px;
+    width: 230px;
+    height: 230px;
+    border-radius: 100%;
+    margin: 25px auto 20px;
     filter: grayscale(1);
     box-shadow: 0 0 15px 1px hsl(0, 2%, 30%)!important;   
     /* box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 0, 0, 0.06); */
@@ -90,21 +116,21 @@ header {
 }
 .seller-intro-button {
     width: 200px;
-    margin: 10px auto 0;
+    margin: 15px auto 0;
 }
 .seller-intro-button  a{
-    color: #545454;
+    color: black;
     padding: 7px;
     font-size: 20px;
     width: inherit;
-    border: 2px solid #545454;
+    border: 2px solid black;
     background-color: transparent;
 }
 .btn:focus {
     box-shadow: none;
 }
 .seller-intro-button a:hover {
-    background-color: #545454;
+    background-color: black;
     color: white;
     transition: background-color .5s ease-in-out;
 }
@@ -115,17 +141,16 @@ header {
     margin-top: 30px;
 }
 .custom-heading {
-    /* font-size: 25px; */
-    color: #545454;
+    color: black;
     font-weight: normal;
     text-align: center;
 }
 .custom-heading::after {
     content: "";
-    width: 150px;
-    height: 3px;
+    width: 100px;
+    height: 1px;
     display: block;
-    background-color: #cac7c7;
+    background-color: #545455;
     margin: 0 auto 20px;
 }
 .after-width::after {
@@ -133,7 +158,7 @@ header {
 }
 .more-about-seller {
     width: 80%;
-    color: #545454;
+    color: black;
     margin: 0 auto;
     font-size: 20px;
 }
@@ -152,9 +177,27 @@ header {
 }
 .chen-image-case {
     width: 350px;
-    padding: 30px 0;
+    height: 250px;
+    padding: 20px 0;
+    box-sizing: content-box;
     margin: 0 auto;
 }
+.chen-image-case a {
+    width: inherit;
+    height: inherit;
+    display: inline-block;
+}
+
+/* animate.css */
+/* :root {
+    --animate-duration: 1.5s;
+    --animate-delay: 0.9s;
+  }
+  #animateX {
+    animation-delay: .5s;
+} */
+/* animate.css */
+
 .chen-image {
     width: inherit;
     height: inherit;
@@ -167,6 +210,7 @@ header {
 .chen-text-case {
     font-size: 20px;
     padding: 20px 60px 20px 0;
+    color: black;
 }
 footer {
     /* min-height: 300px; */
@@ -176,6 +220,7 @@ footer {
 .footer-text-case {
     padding-left: 55px;
     color: white;
+    font-size: 17px;
 }
 .custom-link {
     color: #545454;
@@ -186,7 +231,7 @@ footer {
     /* text-decoration: none; */
 }
 .social-icons .fab {
-    color: #545454;
+    color: black;
 }
 .footer-icons-case {
     display: flex;
@@ -204,7 +249,7 @@ footer {
 }
 .icons-case {
     margin-left: auto;
-    min-width: 250px;
+    min-width: 330px;
 }
 .icons-ball {
     width: 40px;
@@ -212,31 +257,40 @@ footer {
     border-radius: 100%;
     padding: 6px 0;
     color: white;
-    font-size: 18px;
+    font-size: 17px;
     text-align: center;
     background-color: transparent;
     border: 2px solid white;
     /* margin:0 40px; */
 }
-.flex .icons-ball {
-    margin: 0 30px;
+.sm-only {
+    display: none;
 }
+/* .flex .icons-ball {
+    margin: 0 30px;
+} */
 footer .flex, footer .block {
     margin: 20px 0;
 }
 /* **media queries begin ** */
-/* @media screen and (min-width:992px) {
+/* @media screen and (max-width:992px) {
     .sm-only {
-        display: flex!important;
-        justify-content: space-evenly;
+    display: block!important;
     }
 } */
 @media screen and (max-width:991px) {
+    .sm-only {
+        display: flex;
+        min-width: 220px;
+        margin: 25px auto 0;
+        justify-content: space-between;
+        }
     .lg-only {
         display: none;
     }
     .navbar-brand img {
         width: 50px;
+        height: 55px;
     }
     .more-about-seller {
         width: 100%;
@@ -256,6 +310,9 @@ footer .flex, footer .block {
         margin-left : 15px;
         margin-right: 15px;
     }
+    .navbar-toggler {
+        padding: .25rem 0 .25rem .75rem;
+    }
 }
 @media screen and (max-width:760px) {
     .seller-intro-text {
@@ -264,20 +321,38 @@ footer .flex, footer .block {
 }
 @media screen and (max-width:535px) {
     .seller-intro-text {
-        width: 80%;
+        width: 100%;
+        padding: 0 10px;
+    }
+    .more-about-seller {
+        font-size: 18px;
+    }
+    .banner-overlay {
+    padding-top: 90px;
     }
     .chen-text-case {
         padding: 0;
+        font-size: 18px;
     }
     .chen-image-case {
-        width: 300px;
+        width: 100%;
+        height: 220px;
     }
     .flex .icons-ball {
         margin: 0 5px;
     }
+    .icons-case {
+        min-width: 100%;
+    }
     /* .seller-intro {
         padding-top: 0!important;
     } */
+}
+@media screen and (max-width:350px) {
+    .chen-image-case {
+        width: 100%;
+        height: 220px;
+    }
 }
 
 /* **media queries ends ** */
