@@ -10,14 +10,15 @@ body {
     min-width: 300px;
     display: flex;
     justify-content: space-between;
-    /* text-align: left; */
+}
+.last-text {
+    padding: 40px 20px 15px;
+    text-align: right;
+    color: white;
 }
 .bold {
     font-weight: bold;
 }
-/* .strong {
-    font-st;
-} */
 .social-icons {
     width: 35px;
     height: 35px;
@@ -44,9 +45,6 @@ body {
     display: inline-block;
     margin: 0 auto;
 }
-/* nav {
-    background-color: rgba(255, 255, 255, 0.8);
-} */
 .navbar-brand img{
     width: 70px;
     height: 80px;
@@ -73,6 +71,9 @@ header {
     min-height: 300px;
     width: 100%;
     background-size: cover;
+}
+.banner {
+    box-shadow: 0 0 15px 1px hsl(0, 2%, 89%);
 }
 .top-offset {
  margin-top: 100px;
@@ -102,8 +103,8 @@ header {
 .seller-intro img{
     width: 230px;
     height: 230px;
-    border-radius: 100%;
-    margin: 25px auto 20px;
+    border-radius: 5%;
+    margin: 25px auto 30px;
     filter: grayscale(1);
     box-shadow: 0 0 15px 1px hsl(0, 2%, 30%)!important;   
     /* box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 0, 0, 0.06); */
@@ -136,6 +137,7 @@ header {
 }
 
 /* start of to be neat styles*/
+
 .seller-details {
     padding: 20px;
     margin-top: 30px;
@@ -147,14 +149,11 @@ header {
 }
 .custom-heading::after {
     content: "";
-    width: 100px;
+    width: 150px;
     height: 1px;
     display: block;
     background-color: #545455;
     margin: 0 auto 20px;
-}
-.after-width::after {
-    width: 100px;
 }
 .more-about-seller {
     width: 80%;
@@ -187,17 +186,6 @@ header {
     height: inherit;
     display: inline-block;
 }
-
-/* animate.css */
-/* :root {
-    --animate-duration: 1.5s;
-    --animate-delay: 0.9s;
-  }
-  #animateX {
-    animation-delay: .5s;
-} */
-/* animate.css */
-
 .chen-image {
     width: inherit;
     height: inherit;
@@ -207,6 +195,24 @@ header {
     transform: scale(1.1);
     transition: transform .8s ease-in-out;
 }
+.float-top-button {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    padding: 8px;
+    border-radius: 100%;
+    text-align: center;
+    bottom: calc(1vh + 30px);
+    right: 20px;
+    color: white;
+    font-size: 25px;
+    box-shadow: 0 0 15px 1px #696464;        
+}
+.float-top-button:hover {
+    transform: scale(1.2);
+    transition: transform .5s ease-in-out;
+}
 .chen-text-case {
     font-size: 20px;
     padding: 20px 60px 20px 0;
@@ -215,7 +221,7 @@ header {
 footer {
     /* min-height: 300px; */
     background-color: #545454;
-    padding: 50px 0;
+    padding: 50px 0 0;
 }
 .footer-text-case {
     padding-left: 55px;
@@ -228,7 +234,6 @@ footer {
 }
 .custom-link:hover {
     color: #545454;
-    /* text-decoration: none; */
 }
 .social-icons .fab {
     color: black;
@@ -266,18 +271,12 @@ footer {
 .sm-only {
     display: none;
 }
-/* .flex .icons-ball {
-    margin: 0 30px;
-} */
 footer .flex, footer .block {
     margin: 20px 0;
 }
-/* **media queries begin ** */
-/* @media screen and (max-width:992px) {
-    .sm-only {
-    display: block!important;
-    }
-} */
+
+/* **media queries begin ** */  /* **media queries begin ** */
+
 @media screen and (max-width:991px) {
     .sm-only {
         display: flex;
@@ -288,9 +287,12 @@ footer .flex, footer .block {
     .lg-only {
         display: none;
     }
+    .last-text {
+        text-align: center;
+    }
     .navbar-brand img {
-        width: 50px;
-        height: 55px;
+        width: 40px;
+        height: 45px;
     }
     .more-about-seller {
         width: 100%;
@@ -322,7 +324,17 @@ footer .flex, footer .block {
 @media screen and (max-width:535px) {
     .seller-intro-text {
         width: 100%;
-        padding: 0 10px;
+        padding: 0 15px;
+    }
+    .sm-padding {
+        padding: 5px;
+    }
+    .seller-image-case {
+        width: 200px;
+    }
+    .seller-intro img {
+        width: 200px;
+        height: 200px;
     }
     .more-about-seller {
         font-size: 18px;
@@ -344,9 +356,6 @@ footer .flex, footer .block {
     .icons-case {
         min-width: 100%;
     }
-    /* .seller-intro {
-        padding-top: 0!important;
-    } */
 }
 @media screen and (max-width:350px) {
     .chen-image-case {
@@ -355,6 +364,6 @@ footer .flex, footer .block {
     }
 }
 
-/* **media queries ends ** */
+/* **media queries ends ** */ /* **media queries begin ** */
 
 /*end here*/
