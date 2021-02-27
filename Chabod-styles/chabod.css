@@ -198,6 +198,7 @@ header {
 .float-top-button {
     background-color: rgba(0, 0, 0, 0.7);
     width: 50px;
+    display: none;
     height: 50px;
     position: fixed;
     padding: 8px;
