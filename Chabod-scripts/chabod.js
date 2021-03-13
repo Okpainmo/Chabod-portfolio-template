@@ -8,8 +8,10 @@ const bars = document.getElementById("bars");
 function scrollBuddy() {
   if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
     document.getElementById("mynav").style.backgroundColor = "rgba(255, 255, 255, 0.96)";
+    document.getElementById("mynav").style.boxShadow = "0 0 15px 1px hsl(0, 2%, 89%)";
   } else {
     document.getElementById("mynav").style.backgroundColor = "transparent";
+    document.getElementById("mynav").style.boxShadow = "none";
   }
 }
 
