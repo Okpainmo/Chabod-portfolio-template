@@ -11,5 +11,6 @@ body{
   }
   &:hover {
     transition: color .5s ease;
+    transform: scale(1.2);
   }
 }
