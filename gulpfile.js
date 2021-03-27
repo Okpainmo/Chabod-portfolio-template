@@ -1,6 +1,8 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
+// const browserSync = require('browser-sync').create();
+
 
 
 
@@ -33,3 +35,10 @@ gulp.task('sass', function () {
            .pipe(autoprefixer())
            .pipe(gulp.dest('Gulp/Chabod-styles/Chabod-css'))
  });
+
+//  gulp.task('serve', function(){
+//     browserSync.init({
+//         server: 'src',
+//         port: 4000
+//     });
+// })
