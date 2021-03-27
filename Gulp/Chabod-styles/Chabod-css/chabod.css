@@ -67,7 +67,7 @@ nav li:hover {
     color: black!important;
 }
 header {
-    background-image: url(../Images/pix13.jpg);
+    background-image: url(../../Images/pix13.jpg);
     min-height: 300px;
     width: 100%;
     background-size: cover;
@@ -103,7 +103,7 @@ header {
 .seller-intro img{
     width: 230px;
     height: 230px;
-    border-radius: 5%;
+    border-radius: 100%;
     margin: 25px auto 30px;
     filter: grayscale(1);
     box-shadow: 0 0 15px 1px hsl(0, 2%, 30%)!important;   
