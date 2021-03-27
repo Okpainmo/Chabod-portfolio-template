@@ -3,4 +3,7 @@ body {
   font-family: "lato"; }
   body p {
     color: #ffffff;
-    height: 20px; }
+    height: 20px;
+    transform: scale(1.5); }
+  body:hover {
+    transition: color .5s ease; }
