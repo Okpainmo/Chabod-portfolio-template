@@ -20,19 +20,19 @@ gulp.task('hello', function (done) {
 
 // sass task
 gulp.task('sass', function () {   
-    return gulp.src('Gulp/Chabod-styles/Chabod-scss/chabod.scss')
+    return gulp.src('Gulp/Chabod-styles/Chabod-scss/*.scss')
             .pipe(sass())
             .pipe(gulp.dest('Gulp/Chabod-styles/Chabod-css')) 
     })
 
 // watch task
 gulp.task('watch', function() {
-    gulp.watch('Gulp/Chabod-styles/Chabod-scss/chabod.scss', gulp.series('sass'));
+    gulp.watch('Gulp/Chabod-styles/Chabod-scss/*.scss', gulp.series('sass'));
 })
 
 // autoprefixer task
 gulp.task('sass', function () {   
-    return gulp.src('Gulp/Chabod-styles/Chabod-scss/chabod.scss')
+    return gulp.src('Gulp/Chabod-styles/Chabod-scss/*.scss')
            .pipe(sass())
            .pipe(autoprefixer())
            .pipe(gulp.dest('Gulp/Chabod-styles/Chabod-css'))
