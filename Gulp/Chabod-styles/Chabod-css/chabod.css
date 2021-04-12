@@ -245,6 +245,29 @@ header {
   .tools-section .container {
     margin: 70px auto; }
 
+.tools-image-case {
+  min-width: 150px;
+  min-height: 75px;
+  margin: 0 auto;
+  text-align: center;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1); }
+  .tools-image-case:hover {
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+    -webkit-transition: -webkit-filter .4s ease;
+    transition: -webkit-filter .4s ease;
+    transition: filter .4s ease;
+    transition: filter .4s ease, -webkit-filter .4s ease; }
+  .tools-image-case .tools-icon {
+    width: 200px;
+    height: 150px; }
+  .tools-image-case .logo-text {
+    font-size: 45px;
+    margin: auto 0;
+    padding-top: 40px;
+    color: black; }
+
 .chen-image {
   width: 150px;
   height: 75px;
@@ -257,11 +280,6 @@ header {
     transition: -webkit-transform .8s ease-in-out;
     transition: transform .8s ease-in-out;
     transition: transform .8s ease-in-out, -webkit-transform .8s ease-in-out; }
-
-.tools-image-case {
-  width: 150px;
-  height: 75px;
-  margin: 0 auto; }
 
 .float-top-button {
   background-color: rgba(0, 0, 0, 0.7);
