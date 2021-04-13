@@ -367,10 +367,9 @@ footer {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-  .tools-section .container:last-child {
-    margin-top: 0; }
-  .tools-section .container:first-child {
-    margin-bottom: 20px; }
+  .tools-section .container {
+    margin-top: 0;
+    margin-bottom: 0; }
   .lg-only {
     display: none; }
   .last-text {

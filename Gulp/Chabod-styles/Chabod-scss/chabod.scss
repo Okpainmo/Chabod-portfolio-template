@@ -382,11 +382,9 @@ footer {
     justify-content: space-between;
   }
   .tools-section {
-    .container:last-child {
+    .container {
       margin-top: 0;
-    }
-    .container:first-child {
-      margin-bottom: 20px;
+      margin-bottom: 0;
     }
   }
   .lg-only {
