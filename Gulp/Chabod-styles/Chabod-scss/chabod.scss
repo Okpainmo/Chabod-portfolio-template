@@ -39,30 +39,57 @@ nav {
 .overall-overlay {
   width: 100%;
   height: 100vh;
+  // scroll-behavior: smooth;
   position: fixed;
-  display: block;
+  // display: block;
   top: 0;
+  display: none;
   left: 0;
   overflow: auto;
   z-index: 100000;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 20px;
+  .pop-btn-case {
+    position: fixed;
+    top: 20px;
+    right: 45px;
+    z-index: 1000000;
+    width: 40px;
+    height: 50px;
+  }
+  .close-icon {
+    font-size: 40px;
+    color: $color-b;
+    &:hover {
+      transform: scale(1.2);
+      transition: transform .3s ease;
+    }
+  }
   .about-works-case {
     width: 80%;
     min-height: 300px;
-    padding: 20px 20px 30px;
+    padding: 0 0 30px;
     margin: 0 auto;
+    display: none;
     background-color: $color-c;
     // position: relative;
     // z-index: 10000000;
-    .about-works-content {
-      width: 70%;
-      margin: 0 auto;
-    }
     .works-heading {
       font-size: 30px;
       margin-bottom: 20px;
       text-align: center;
+      // width: 100%;
+      background-size: cover;
+      color: $color-c;
+      background-image : url(../../Images/pix13.jpg);
+    }
+    .works-heading-overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px 0;
+    }
+    .about-works-content {
+      width: 70%;
+      margin: 0 auto;
     }
     .sm-heading {
       font-size: 22px;
@@ -424,8 +451,23 @@ footer {
     }
   }
   .works-section {
-    .card-pic-case {
-      min-height: 350px!important;
+    .card-pic-case-child {
+      min-height: 350px;
+    }
+  }
+  .overall-overlay {
+    .about-works-case {
+      width: 90%;
+      .about-works-content {
+        width: 70%;
+      }
+      .img-big {
+        height: 320px;
+      }
+    }
+    .pop-btn-case {
+      top: 8px;
+      right: 25px;
     }
   }
   .lg-only {
@@ -470,14 +512,54 @@ footer {
   .seller-intro-text {
     width: 70%;
   }
+  .works-section {
+    .card-pic-case-child {
+      min-height: 300px;
+    }
+  }
+  .overall-overlay {
+    .pop-btn-case {
+      top: 5px;
+      right: 18px;
+    }
+    .close-icon {
+      font-size: 32px;
+    }
+    .about-works-case {
+      .works-heading {
+        font-size: 25px;
+      }
+      .about-works-content {
+        width: 80%;
+      }
+      .img-big {
+        height: 220px;
+      }
+    }
+  }
 }
 @media screen and (max-width:535px) {
   header {
     min-height: 100vh;
   }
   .works-section {
-    .card-pic-case {
-      min-height: 220px!important;
+    .card-pic-case-child {
+      min-height: 290px;
+    }
+  }
+  .overall-overlay {
+    .about-works-case {
+      width: 100%; 
+      .works-heading {
+        font-size: 24px;
+        text-align: left;
+      }
+      .works-heading-overlay {
+        padding: 8px;
+      }
+      .about-works-content {
+        width: 90%;
+      }
     }
   }
   .seller-intro { 
