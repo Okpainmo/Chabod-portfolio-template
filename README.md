@@ -1,5 +1,6 @@
-# Chabod-portfolio-template
-# The Chabod story
+# Chabod-portfolio-template.
+# The Chabod story.
+# what a readme file.
 This is repo hosting Chabod - a single page portfolio template.
 Project stack:
 1. HTML5
@@ -10,4 +11,5 @@ Project stack:
 6. Migrating Chabod to Sass.
 7. Chabod now on Sass.
 8. Sorry, I changed my mind.....now using jquery + vanilla javscript for all extra chabod scripting work.
+9. I've got great plans for Chabod.....building her bigger...thinking of selling her...don't tell anyone i told you so.
 
