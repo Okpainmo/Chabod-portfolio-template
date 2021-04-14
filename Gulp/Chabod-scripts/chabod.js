@@ -82,7 +82,15 @@ $(document).ready(
 $(document).ready(
   $("#closeIcon").click (
     function() {
-      $("#popUpOverlay").fadeOut()
+      $("#popUpOverlay").fadeOut();
+    }
+  )
+)
+
+$(document).ready (
+  $("#closeBtn").click (
+    function() {
+      $("#popUpOverlay").fadeOut();
     }
   )
 )

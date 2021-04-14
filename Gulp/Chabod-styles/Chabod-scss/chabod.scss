@@ -59,7 +59,7 @@ nav {
   }
   .close-icon {
     font-size: 40px;
-    color: $color-b;
+    color: $color-c;
     &:hover {
       transform: scale(1.2);
       transition: transform .3s ease;
@@ -96,6 +96,25 @@ nav {
       padding: 5px;
       margin: 10px 0;
       border-left: 2px solid black;
+    }
+    .bottom-close {
+      width: 150px;
+      border-radius: 30px;
+      background-color: $color-z;
+      border: 2px solid $color-a;
+      color: $color-a;
+      font-size: 22px;
+      padding: 5px;
+      text-align: center;
+      margin: 30px auto 0;
+      &:hover {
+        background-color: $color-a;
+        color: $color-c;
+        transition: color .7s ease;
+      }
+      .fas {
+        transform: translate(1px, 1px);
+      }
     }
     .works-image {
       margin-bottom: 30px;
@@ -524,6 +543,7 @@ footer {
     }
     .close-icon {
       font-size: 32px;
+      color: #abaeb1;
     }
     .about-works-case {
       .works-heading {
@@ -544,7 +564,7 @@ footer {
   }
   .works-section {
     .card-pic-case-child {
-      min-height: 290px;
+      min-height: 250px;
     }
   }
   .overall-overlay {

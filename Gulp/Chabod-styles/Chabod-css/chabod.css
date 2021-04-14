@@ -44,7 +44,7 @@ nav li {
     height: 50px; }
   .overall-overlay .close-icon {
     font-size: 40px;
-    color: #6c757d; }
+    color: white; }
     .overall-overlay .close-icon:hover {
       -webkit-transform: scale(1.2);
           -ms-transform: scale(1.2);
@@ -78,6 +78,25 @@ nav li {
       padding: 5px;
       margin: 10px 0;
       border-left: 2px solid black; }
+    .overall-overlay .about-works-case .bottom-close {
+      width: 150px;
+      border-radius: 30px;
+      background-color: transparent;
+      border: 2px solid #000;
+      color: #000;
+      font-size: 22px;
+      padding: 5px;
+      text-align: center;
+      margin: 30px auto 0; }
+      .overall-overlay .about-works-case .bottom-close:hover {
+        background-color: #000;
+        color: white;
+        -webkit-transition: color .7s ease;
+        transition: color .7s ease; }
+      .overall-overlay .about-works-case .bottom-close .fas {
+        -webkit-transform: translate(1px, 1px);
+            -ms-transform: translate(1px, 1px);
+                transform: translate(1px, 1px); }
     .overall-overlay .about-works-case .works-image {
       margin-bottom: 30px; }
     .overall-overlay .about-works-case .img-big {
@@ -466,7 +485,8 @@ footer {
     top: 5px;
     right: 18px; }
   .overall-overlay .close-icon {
-    font-size: 32px; }
+    font-size: 32px;
+    color: #abaeb1; }
   .overall-overlay .about-works-case .works-heading {
     font-size: 25px; }
   .overall-overlay .about-works-case .about-works-content {
@@ -478,7 +498,7 @@ footer {
   header {
     min-height: 100vh; }
   .works-section .card-pic-case-child {
-    min-height: 290px; }
+    min-height: 250px; }
   .overall-overlay .about-works-case {
     width: 100%; }
     .overall-overlay .about-works-case .works-heading {
