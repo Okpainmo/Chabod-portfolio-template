@@ -13,35 +13,6 @@ $(document).ready( function() {
 )
 })
 
-// $(document).ready( function() {
-//   $(window).scroll(function(){
-//     if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-//       $(".works-heading").css("position","fixed");
-//       $(".works-heading").css("top", 0);
-//       $(".works-heading").css("left", 0);
-//     }
-//     else {
-//       $("#myNav").css("backgroundColor", "transparent");
-//       $("#myNav").css("boxShadow", "none");
-//     }
-//   }
-// )
-// })
-// $(document).ready( function() {
-//   $(window).scroll(function(){
-//     if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-//       $(".works-heading").css("position","fixed");
-//       $(".works-heading").css("top", 0);
-//       $(".works-heading").css("left", 0);
-//     }
-//     else {
-//       $("#myNav").css("backgroundColor", "transparent");
-//       $("#myNav").css("boxShadow", "none");
-//     }
-//   }
-// )
-// })
-
 //float button function.
 $(document).ready(
   $(window).scroll(
