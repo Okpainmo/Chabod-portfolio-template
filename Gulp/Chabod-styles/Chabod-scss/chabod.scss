@@ -446,7 +446,7 @@ footer {
   color: $color-b;
   text-decoration: none;
   &:hover {
-    color: $color-b;
+    color: $color-a;
     text-decoration: none;
   }
 }
@@ -579,10 +579,6 @@ footer {
   }
   .overall-overlay {
     padding: 10px 5px;
-    .pop-btn-case {
-      top: 10px;
-      right: 2px;
-    }
     .about-works-case {
       width: 100%; 
       .works-heading {
@@ -593,7 +589,7 @@ footer {
         padding: 8px;
       }
       .about-works-content {
-        width: 96%;
+        width: 97%;
       }
     }
   }
@@ -634,3 +630,11 @@ footer {
       min-width: 100%;
   }
 }
+// @media screen and (max-width:430px) {
+//   .overall-overlay {
+//     padding: 10px 5px;
+//     .pop-btn-case {
+//       top: 10px;
+//       right: 2px;
+//     }}
+// }

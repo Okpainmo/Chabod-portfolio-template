@@ -409,7 +409,7 @@ footer {
   color: #6c757d;
   text-decoration: none; }
   .custom-link:hover {
-    color: #6c757d;
+    color: #000;
     text-decoration: none; }
 
 .block {
@@ -508,9 +508,6 @@ footer {
     min-height: 230px; }
   .overall-overlay {
     padding: 10px 5px; }
-    .overall-overlay .pop-btn-case {
-      top: 10px;
-      right: 2px; }
     .overall-overlay .about-works-case {
       width: 100%; }
       .overall-overlay .about-works-case .works-heading {
@@ -519,7 +516,7 @@ footer {
       .overall-overlay .about-works-case .works-heading-overlay {
         padding: 8px; }
       .overall-overlay .about-works-case .about-works-content {
-        width: 96%; }
+        width: 97%; }
   .seller-intro img {
     width: 200px;
     height: 200px; }
