@@ -88,7 +88,17 @@ $(document).ready(
 )
 
 $(document).ready (
-  $("#closeBtn").click (
+  $("#closeBtn1").click (
+    function() {
+      $("#popUpOverlay").fadeOut();
+    }
+  ),
+  $("#closeBtn2").click (
+    function() {
+      $("#popUpOverlay").fadeOut();
+    }
+  ),
+  $("#closeBtn3").click (
     function() {
       $("#popUpOverlay").fadeOut();
     }

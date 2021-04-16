@@ -17,6 +17,9 @@ nav li {
     -webkit-transition: background-color .5s ease-in-out;
     transition: background-color .5s ease-in-out; }
 
+.navbar {
+  padding: 0 10px; }
+
 .navbar-brand img {
   width: 70px;
   height: 80px; }
@@ -60,6 +63,8 @@ nav li {
     margin: 0 auto;
     display: none;
     background-color: white; }
+    .overall-overlay .about-works-case .close-link {
+      text-decoration: none; }
     .overall-overlay .about-works-case .works-heading {
       font-size: 30px;
       margin-bottom: 20px;
@@ -76,7 +81,7 @@ nav li {
     .overall-overlay .about-works-case .sm-heading {
       font-size: 22px;
       padding: 5px;
-      margin: 10px 0;
+      margin: 25px 0 10px 0;
       border-left: 2px solid black; }
     .overall-overlay .about-works-case .bottom-close {
       width: 150px;
@@ -84,8 +89,8 @@ nav li {
       background-color: transparent;
       border: 2px solid #000;
       color: #000;
-      font-size: 22px;
-      padding: 5px;
+      font-size: 20px;
+      padding: 3px;
       text-align: center;
       margin: 30px auto 0; }
       .overall-overlay .about-works-case .bottom-close:hover {
@@ -444,11 +449,11 @@ footer {
   .works-section .card-pic-case-child {
     min-height: 350px; }
   .overall-overlay .about-works-case {
-    width: 90%; }
+    width: 96%; }
     .overall-overlay .about-works-case .about-works-content {
-      width: 70%; }
+      width: 85%; }
     .overall-overlay .about-works-case .img-big {
-      height: 320px; }
+      height: 380px; }
   .overall-overlay .pop-btn-case {
     top: 8px;
     right: 25px; }
@@ -487,27 +492,34 @@ footer {
   .overall-overlay .close-icon {
     font-size: 32px;
     color: #abaeb1; }
-  .overall-overlay .about-works-case .works-heading {
-    font-size: 25px; }
-  .overall-overlay .about-works-case .about-works-content {
-    width: 80%; }
-  .overall-overlay .about-works-case .img-big {
-    height: 220px; } }
+  .overall-overlay .about-works-case {
+    width: 98%; }
+    .overall-overlay .about-works-case .works-heading {
+      font-size: 25px; }
+    .overall-overlay .about-works-case .about-works-content {
+      width: 95%; }
+    .overall-overlay .about-works-case .img-big {
+      height: 240px; } }
 
 @media screen and (max-width: 535px) {
   header {
     min-height: 100vh; }
   .works-section .card-pic-case-child {
-    min-height: 250px; }
-  .overall-overlay .about-works-case {
-    width: 100%; }
-    .overall-overlay .about-works-case .works-heading {
-      font-size: 24px;
-      text-align: left; }
-    .overall-overlay .about-works-case .works-heading-overlay {
-      padding: 8px; }
-    .overall-overlay .about-works-case .about-works-content {
-      width: 90%; }
+    min-height: 230px; }
+  .overall-overlay {
+    padding: 10px 5px; }
+    .overall-overlay .pop-btn-case {
+      top: 10px;
+      right: 2px; }
+    .overall-overlay .about-works-case {
+      width: 100%; }
+      .overall-overlay .about-works-case .works-heading {
+        font-size: 24px;
+        text-align: left; }
+      .overall-overlay .about-works-case .works-heading-overlay {
+        padding: 8px; }
+      .overall-overlay .about-works-case .about-works-content {
+        width: 96%; }
   .seller-intro img {
     width: 200px;
     height: 200px; }
