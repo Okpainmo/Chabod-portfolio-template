@@ -23,7 +23,7 @@ gulp.task('hello', function (done) {
 // sass task
 gulp.task('sass', function () {   
     return gulp.src('Gulp/Chabod-styles/Chabod-scss/**/*.scss')
-            .pipe(sassPartialsImported('Gulp/Chabod-style/Chabod.scss','Gulp/Chabod-style/Chabod.scss/Chabod-partials'))
+            .pipe(sassPartialsImported('Gulp/Chabod-style/Chabod.scss'))
             .pipe(sass())
             .pipe(gulp.dest('Gulp/Chabod-styles/Chabod-css')) 
     })
