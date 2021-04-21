@@ -1,4 +1,4 @@
-@use '_partial.scss';
+@use 'partial';
 
 //colors-variables
 $color-a : #000;
@@ -22,7 +22,6 @@ nav {
     padding: 0 10px;
     text-align: center;
     min-width: 80px;
-    // color: partial.$color-im;
     &:hover {
       border-radius: 5px;
       background-color: $color-d;
@@ -37,6 +36,8 @@ nav {
   img {
     width: 70px;
     height: 80px;
+    // color: partial.$colorIm;
+    // @include partial.color();
   }
 }
 .nav-case {
@@ -234,7 +235,7 @@ nav {
   }
 }
 .last-text {
-  padding: 40px 20px 15px;
+  padding: 0px 20px 15px;
   text-align: right;
   color: $color-c;
 }
@@ -280,7 +281,7 @@ margin-top: 100px;
 }
 .custom-heading {
   color: $color-a;
-  font-weight: 300;
+  font-weight: bold;
   text-align: center;
   padding: 10px 0;
   margin-bottom: 30px;
@@ -332,6 +333,9 @@ margin-top: 100px;
       opacity: 0;
       background-color: rgba(0, 0, 0, 0.7);
     }
+    .card-title {
+      font-weight: bold;
+    }
     .tags-case {
       position: relative;
       top: 10px;
@@ -381,6 +385,13 @@ margin-top: 100px;
       margin: auto 0;
       padding-top: 40px;
       color: black;
+    }
+    .logo-credit {
+      font-size: 10px;
+      display: block;
+      // a {
+      //   font-size: 12px!important;
+      // }
     }
 }
 .chen-image {
@@ -435,7 +446,7 @@ footer {
   }
 }
 .footer-text-case {
-  padding-left: 55px;
+  padding-left: 50px;
   color: $color-c;
   font-size: 20px;
 }
