@@ -1,3 +1,180 @@
+@media screen and (max-width: 991px) {
+  .sm-only {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 220px;
+    margin: 25px auto 0;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .tools-section .container {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .works-section .card-pic-case-child {
+    min-height: 350px;
+  }
+
+  .overall-overlay .about-works-case {
+    width: 96%;
+  }
+  .overall-overlay .about-works-case .about-works-content {
+    width: 85%;
+  }
+  .overall-overlay .about-works-case .img-big {
+    height: 380px;
+  }
+  .overall-overlay .pop-btn-case {
+    top: 8px;
+    right: 25px;
+  }
+
+  .lg-only {
+    display: none;
+  }
+
+  .last-text {
+    text-align: center;
+  }
+
+  .more-about-seller {
+    width: 100%;
+  }
+
+  .footer-text-case {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .icons-case {
+    margin: 0 auto;
+  }
+
+  .row {
+    margin-left: 7px;
+    margin-right: 7px;
+  }
+
+  .navbar-toggler {
+    padding: 0.25rem 0 0.25rem 0.75rem;
+  }
+
+  .navbar-brand img {
+    width: 38px;
+    height: 43px;
+  }
+
+  .tools-image-case {
+    margin-bottom: 40px !important;
+  }
+  .tools-image-case .logo-text {
+    padding-top: 15px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .seller-intro-text {
+    width: 70%;
+  }
+
+  .works-section .card-pic-case-child {
+    min-height: 300px;
+  }
+
+  .overall-overlay .pop-btn-case {
+    top: 5px;
+    right: 18px;
+  }
+  .overall-overlay .close-icon {
+    font-size: 32px;
+    color: #abaeb1;
+  }
+  .overall-overlay .about-works-case {
+    width: 98%;
+  }
+  .overall-overlay .about-works-case .works-heading {
+    font-size: 25px;
+  }
+  .overall-overlay .about-works-case .about-works-content {
+    width: 95%;
+  }
+  .overall-overlay .about-works-case .img-big {
+    height: 260px;
+  }
+}
+@media screen and (max-width: 535px) {
+  header {
+    min-height: 100vh;
+  }
+
+  .works-section .card-pic-case-child {
+    min-height: 260px;
+  }
+
+  .overall-overlay {
+    padding: 10px 5px;
+  }
+  .overall-overlay .about-works-case {
+    width: 100%;
+  }
+  .overall-overlay .about-works-case .works-heading {
+    font-size: 24px;
+    text-align: left;
+  }
+  .overall-overlay .about-works-case .works-heading-overlay {
+    padding: 8px;
+  }
+  .overall-overlay .about-works-case .about-works-content {
+    width: 97%;
+  }
+
+  .seller-intro img {
+    width: 200px;
+    height: 200px;
+  }
+  .seller-intro-text {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .sm-padding {
+    padding: 5px;
+  }
+
+  .seller-image-case {
+    width: 200px;
+  }
+
+  .more-about-seller {
+    font-size: 20px;
+  }
+
+  .banner-overlay {
+    padding-top: 90px;
+  }
+
+  .flex .icons-ball {
+    margin: 0 5px;
+  }
+
+  .icons-case {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 430px) {
+  .overall-overlay {
+    padding: 10px 5px;
+  }
+  .overall-overlay .pop-btn-case {
+    top: 5px;
+    right: 0;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
@@ -28,6 +205,8 @@ nav li:hover {
 .navbar-brand img {
   width: 70px;
   height: 80px;
+  color: blue;
+  display: block;
 }
 
 .nav-case {
@@ -524,182 +703,4 @@ footer .flex, footer .block {
 
 .sm-only {
   display: none;
-}
-
-@media screen and (max-width: 991px) {
-  .sm-only {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    min-width: 220px;
-    margin: 25px auto 0;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-  }
-
-  .tools-section .container {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  .works-section .card-pic-case-child {
-    min-height: 350px;
-  }
-
-  .overall-overlay .about-works-case {
-    width: 96%;
-  }
-  .overall-overlay .about-works-case .about-works-content {
-    width: 85%;
-  }
-  .overall-overlay .about-works-case .img-big {
-    height: 380px;
-  }
-  .overall-overlay .pop-btn-case {
-    top: 8px;
-    right: 25px;
-  }
-
-  .lg-only {
-    display: none;
-  }
-
-  .last-text {
-    text-align: center;
-  }
-
-  .more-about-seller {
-    width: 100%;
-  }
-
-  .footer-text-case {
-    padding: 20px;
-    text-align: center;
-  }
-
-  .icons-case {
-    margin: 0 auto;
-  }
-
-  .row {
-    margin-left: 7px;
-    margin-right: 7px;
-  }
-
-  .navbar-toggler {
-    padding: 0.25rem 0 0.25rem 0.75rem;
-  }
-
-  .navbar-brand img {
-    width: 38px;
-    height: 43px;
-  }
-
-  .tools-image-case {
-    margin-bottom: 40px !important;
-  }
-  .tools-image-case .logo-text {
-    padding-top: 15px;
-  }
-}
-@media screen and (max-width: 760px) {
-  .seller-intro-text {
-    width: 70%;
-  }
-
-  .works-section .card-pic-case-child {
-    min-height: 300px;
-  }
-
-  .overall-overlay .pop-btn-case {
-    top: 5px;
-    right: 18px;
-  }
-  .overall-overlay .close-icon {
-    font-size: 32px;
-    color: #abaeb1;
-  }
-  .overall-overlay .about-works-case {
-    width: 98%;
-  }
-  .overall-overlay .about-works-case .works-heading {
-    font-size: 25px;
-  }
-  .overall-overlay .about-works-case .about-works-content {
-    width: 95%;
-  }
-  .overall-overlay .about-works-case .img-big {
-    height: 260px;
-  }
-}
-@media screen and (max-width: 535px) {
-  header {
-    min-height: 100vh;
-  }
-
-  .works-section .card-pic-case-child {
-    min-height: 260px;
-  }
-
-  .overall-overlay {
-    padding: 10px 5px;
-  }
-  .overall-overlay .about-works-case {
-    width: 100%;
-  }
-  .overall-overlay .about-works-case .works-heading {
-    font-size: 24px;
-    text-align: left;
-  }
-  .overall-overlay .about-works-case .works-heading-overlay {
-    padding: 8px;
-  }
-  .overall-overlay .about-works-case .about-works-content {
-    width: 97%;
-  }
-
-  .seller-intro img {
-    width: 200px;
-    height: 200px;
-  }
-  .seller-intro-text {
-    width: 100%;
-    padding: 0 15px;
-  }
-
-  .sm-padding {
-    padding: 5px;
-  }
-
-  .seller-image-case {
-    width: 200px;
-  }
-
-  .more-about-seller {
-    font-size: 20px;
-  }
-
-  .banner-overlay {
-    padding-top: 90px;
-  }
-
-  .flex .icons-ball {
-    margin: 0 5px;
-  }
-
-  .icons-case {
-    min-width: 100%;
-  }
-}
-@media screen and (max-width: 430px) {
-  .overall-overlay {
-    padding: 10px 5px;
-  }
-  .overall-overlay .pop-btn-case {
-    top: 5px;
-    right: 0;
-  }
 }
