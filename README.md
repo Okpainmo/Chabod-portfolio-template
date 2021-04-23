@@ -11,6 +11,6 @@ Project stack:
 6. Migrating Chabod to Sass.
 7. Chabod now on Sass.
 8. Sorry, I changed my mind.....now using jquery + vanilla javscript for all extra chabod scripting work -
-there's no point using her in bootstrap and not enjoying her super easy syntax for the other stuffs. I'll leave out jquery if on bootstrap 5.
+there's no point using her(jquery) in bootstrap 4 and not enjoying her super easy syntax for the other stuffs. I'll leave out jquery if on bootstrap 5.
 9. I've got great plans for Chabod.....building her bigger...creating a public release.
 
