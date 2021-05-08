@@ -1,8 +1,85 @@
+@use "color-variables" as c-var;
+
 // three specially classified mixins for customizing the whole page.
-// just assign a different mixin to the "body tag" and the whole page will take a different color theme.
-// #cool right?
+// just assign a different mixin to the "body tag" and the whole page will adjust to a different color theme.
+// #cool_right?
 
 
-// girly--pinkie
+// pink theme color
+$girly--pinky: #ea4d99;
+$trans--gp : rgba(234, 76, 153, .3);
+
 // bold--purp
-// boy--blue
+// bo--blue
+
+@mixin girly--pinky() {
+    nav {
+        li {
+            &:hover {
+                background-color: $trans--gp;
+            }
+        }
+    }
+    // .nav-link {
+    //     color: ;
+    // }
+    .social-icons {
+        border: 2px solid $girly--pinky;
+        .fab {
+            color: $girly--pinky;
+        }
+    }
+    .seller-intro {
+        // color: c-var.$custom-grey;
+        &-button {
+          a {
+            color: c-var.$vanilla;
+            border: 2px solid $girly--pinky;
+            background-color: $girly--pinky;
+          }
+          a:hover {
+            background-color: c-var.$trans;
+            color: c-var.$night;
+            transition: background-color .5s ease-in-out;
+          }
+        }
+    }
+    .custom-heading {
+        color: c-var.$custom-grey;
+        border-left: 5px $girly--pinky solid;
+    }
+    .custom-link {
+        color: $girly--pinky;
+        &:hover {
+          color: c-var.$night;
+        }
+    }
+    .works-section {
+        .row {
+            h5 {
+                color: c-var.$custom-grey;
+            }
+        }
+    }
+    .float-top-button {
+        background-color: $girly--pinky;
+    }
+    footer {
+        background-color: #eaeaea;
+        .footer-text-case {
+            color: c-var.$custom-grey;
+        }
+        .last-text {
+            color: c-var.$custom-grey;
+        }
+        .fa-heart {
+        color: $girly--pinky;
+        }
+        .icons-ball {
+            border: 2px solid $girly--pinky;
+        }
+        .fab {
+            color: $girly--pinky;
+        }
+    }
+}

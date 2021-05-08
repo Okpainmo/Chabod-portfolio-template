@@ -7,6 +7,60 @@ body {
   padding: 0;
   font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+body nav li:hover {
+  background-color: rgba(234, 76, 153, 0.3);
+}
+body .social-icons {
+  border: 2px solid #ea4d99;
+}
+body .social-icons .fab {
+  color: #ea4d99;
+}
+body .seller-intro-button a {
+  color: white;
+  border: 2px solid #ea4d99;
+  background-color: #ea4d99;
+}
+body .seller-intro-button a:hover {
+  background-color: transparent;
+  color: #000;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+body .custom-heading {
+  color: #6c757d;
+  border-left: 5px #ea4d99 solid;
+}
+body .custom-link {
+  color: #ea4d99;
+}
+body .custom-link:hover {
+  color: #000;
+}
+body .works-section .row h5 {
+  color: #6c757d;
+}
+body .float-top-button {
+  background-color: #ea4d99;
+}
+body footer {
+  background-color: #eaeaea;
+}
+body footer .footer-text-case {
+  color: #6c757d;
+}
+body footer .last-text {
+  color: #6c757d;
+}
+body footer .fa-heart {
+  color: #ea4d99;
+}
+body footer .icons-ball {
+  border: 2px solid #ea4d99;
+}
+body footer .fab {
+  color: #ea4d99;
+}
 
 nav li {
   margin: 0 10px;
@@ -28,8 +82,7 @@ nav li:hover {
 .navbar-brand img {
   width: 70px;
   height: 80px;
-  color: blue;
-  display: block;
+  color: #000;
 }
 
 .nav-case {
@@ -59,7 +112,7 @@ nav li:hover {
 }
 .overall-overlay .close-icon {
   font-size: 40px;
-  color: white;
+  color: rgba(108, 117, 125, 0.3);
 }
 .overall-overlay .close-icon:hover {
   -webkit-transform: scale(1.2);
@@ -102,7 +155,7 @@ nav li:hover {
   font-weight: bold;
   padding: 5px;
   margin: 25px 0 10px 0;
-  border-left: 2px solid black;
+  border-left: 2px solid #000;
 }
 .overall-overlay .about-works-case .bottom-close {
   width: 150px;
@@ -343,7 +396,6 @@ header {
 }
 .works-section .row .card {
   border: none;
-  cursor: pointer;
 }
 .works-section .row .card .card-body {
   padding: 15px 0 0;
@@ -357,6 +409,7 @@ header {
   background-size: cover;
   box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 0, 0, 0.06);
   width: 100%;
+  cursor: pointer;
 }
 .works-section .row .card .card-pic-case-child {
   height: 240px;

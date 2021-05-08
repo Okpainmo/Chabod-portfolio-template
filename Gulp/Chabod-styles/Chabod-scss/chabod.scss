@@ -1,6 +1,6 @@
 // Sass partials import
-@use 'Chabod-partials/color-variables';
-@use 'Chabod-partials/color-mixins';
+@use 'Chabod-partials/color-variables' as c-var;
+@use 'Chabod-partials/color-mixins' as c-mix;
 
 
 //regular styles
@@ -8,6 +8,7 @@ html {
   scroll-behavior: smooth ;
 }
 body {
+  @include c-mix.girly--pinky();
   margin: 0;
   padding: 0;
   font-family: Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
@@ -20,10 +21,13 @@ nav {
     min-width: 80px;
     &:hover {
       border-radius: 5px;
-      background-color: $color-d;
+      background-color: c-var.$trans-ash;
       transition: background-color .5s ease-in-out;
     }
   }
+  // .dropdown-item {
+  //   text-align: center!important;
+  // }
 }
 .navbar {
   padding: 0 10px;
@@ -32,8 +36,8 @@ nav {
   img {
     width: 70px;
     height: 80px;
-    color: colors.$colorIm;
-    @include colors.color();
+    color: c-var.$night;
+    // @include mix.color;
   }
 }
 .nav-case {
@@ -61,7 +65,7 @@ nav {
   }
   .close-icon {
     font-size: 40px;
-    color: $color-c;
+    color: c-var.$trans-ash;
     &:hover {
       transform: scale(1.2);
       transition: transform .3s ease;
@@ -73,7 +77,7 @@ nav {
     padding: 0 0 30px;
     margin: 0 auto;
     display: none;
-    background-color: $color-c;
+    background-color: c-var.$vanilla;
     // position: relative;
     // z-index: 10000000;
     .close-link {
@@ -85,7 +89,7 @@ nav {
       text-align: center;
       // width: 100%;
       background-size: cover;
-      color: $color-c;
+      color: c-var.$vanilla;
       background-image : url(../../Images/pix13.jpg);
     }
     .works-heading-overlay {
@@ -101,21 +105,21 @@ nav {
       font-weight: bold;
       padding: 5px;
       margin: 25px 0 10px 0;
-      border-left: 2px solid black;
+      border-left: 2px solid c-var.$night;
     }
     .bottom-close {
       width: 150px;
       border-radius: 30px;
-      background-color: $color-z;
-      border: 2px solid $color-a;
-      color: $color-a;
+      background-color: c-var.$trans;
+      border: 2px solid c-var.$night;
+      color: c-var.$night;
       font-size: 20px;
       padding: 3px;
       text-align: center;
       margin: 30px auto 0;
       &:hover {
-        background-color: $color-a;
-        color: $color-c;
+        background-color: c-var.$night;
+        color: c-var.$vanilla;
         transition: color .7s ease;
       }
       .fas {
@@ -134,13 +138,13 @@ nav {
   }
 }
 .nav-link {
-  color: $color-a!important;
+  color: c-var.$night!important;
 }
 .seller-intro {
     min-width: 200px;
     padding: 0 0 50px;  
     margin: 0 auto;
-    color: $color-a;
+    color: c-var.$night;
     img {
       width: 230px;
       height: 230px;
@@ -160,16 +164,16 @@ nav {
       width: 200px;
       margin: 25px auto 0;
       a {
-        color: $color-c;
+        color: c-var.$vanilla;
         padding: 7px;
         font-size: 20px;
         width: inherit;
-        border: 2px solid $color-a;
-        background-color: $color-a;
+        border: 2px solid c-var.$night;
+        background-color: c-var.$night;
       }
       a:hover {
-        background-color: $color-z;
-        color: $color-a;
+        background-color: c-var.$trans;
+        color: c-var.$night;
         transition: background-color .5s ease-in-out;
       }
     }
@@ -188,15 +192,15 @@ nav {
   display: inline-block;
   border-radius: 100%;
   font-size: 17px;
-  background-color: $color-z;
-  border: 2px $color-a solid;
+  background-color: c-var.$trans;
+  border: 2px c-var.$night solid;
   text-align: center;
   &:hover {
     transform: scale(1.2);
     transition: .5s ease-in-out transform;
   }
   & .fab {
-    color: $color-a;
+    color: c-var.$night;
 
   }
   &-case {
@@ -220,10 +224,10 @@ nav {
   height: 40px;
   border-radius: 100%;
   padding: 6px 0;
-  color: $color-c;
+  color: c-var.$vanilla;
   font-size: 17px;
   text-align: center;
-  background-color: $color-z;
+  background-color: c-var.$trans;
   border: 2px solid white;
   /* margin:0 40px; */
   &:hover {
@@ -234,7 +238,7 @@ nav {
 .last-text {
   padding: 0px 20px 15px;
   text-align: right;
-  color: $color-c;
+  color: c-var.$vanilla;
 }
 .bold {
   font-weight: bold;
@@ -243,7 +247,7 @@ nav {
   width: 20px;
   height: 20px;
   border-radius: 100%;
-  background-color: $color-a;
+  background-color: c-var.$night;
   display: inline-block;
   margin: 0 auto;
 }
@@ -277,16 +281,16 @@ margin-top: 100px;
   }
 }
 .custom-heading {
-  color: $color-a;
+  color: c-var.$night;
   font-weight: bold;
   text-align: center;
   padding: 10px 0;
   margin-bottom: 30px;
-  border-left: 5px $color-a solid;
+  border-left: 5px c-var.$night solid;
 }
 .more-about-seller {
   width: 80%;
-  color: $color-a;
+  color: c-var.$night;
   margin: 0 auto;
   font-size: 20px;
 }
@@ -310,7 +314,6 @@ margin-top: 100px;
   }
   .row .card {
     border: none;
-    cursor: pointer;
     .card-body {
       padding: 15px 0 0;
     }
@@ -323,6 +326,7 @@ margin-top: 100px;
       background-size: cover;
       box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 0, 0, 0.06);
       width: 100%;
+      cursor: pointer;
     }
     .card-pic-case-child {
       height: 240px;
@@ -347,7 +351,7 @@ margin-top: 100px;
       display: block;
       border-radius: 5px;
       padding: 3px 10px;
-      color: $color-a;
+      color: c-var.$night;
     }
   }
   .container {
@@ -421,9 +425,9 @@ margin-top: 100px;
   text-align: center;
   bottom: 30px;
   right: 20px;
-  color: $color-c;
+  color: c-var.$vanilla;
   font-size: 25px;
-  box-shadow: 0 0 15px 1px $color-b;  
+  box-shadow: 0 0 15px 1px c-var.$custom-grey;  
   &:hover {
     transform: scale(1.2);
     transition: transform .5s ease-in-out;
@@ -444,7 +448,7 @@ footer {
 }
 .footer-text-case {
   padding-left: 50px;
-  color: $color-c;
+  color: c-var.$vanilla;
   font-size: 20px;
 }
 .footer-icons-case {
@@ -452,10 +456,10 @@ footer {
   align-items: center;
 }
 .custom-link {
-  color: $color-b;
+  color: c-var.$custom-grey;
   text-decoration: none;
   &:hover {
-    color: $color-a;
+    color: c-var.$night;
     text-decoration: none;
   }
 }

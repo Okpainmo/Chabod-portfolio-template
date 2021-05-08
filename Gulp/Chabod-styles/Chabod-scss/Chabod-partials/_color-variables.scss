@@ -1,24 +1,20 @@
 //colors-variables
 // black
-$color-a : #000;
+$night : #000;
 
 // custom-grey
-$color-b : #6c757d;
+$custom-grey : #6c757d;
 
 // white
-$color-c : white;
+$vanilla : white;
 
 // opacity-effect
-$color-d : rgba(108, 117, 125, .3);
+$trans-ash : rgba(108, 117, 125, .3);
 
 // transparent
-$color-z : transparent;
+$trans : transparent;
 
 
 
 
 
-$colorIm: blue;
-@mixin color() {
-    display: block;
-}
