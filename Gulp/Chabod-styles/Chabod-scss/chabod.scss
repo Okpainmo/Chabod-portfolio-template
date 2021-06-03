@@ -25,9 +25,9 @@ nav {
       transition: background-color .5s ease-in-out;
     }
   }
-  // .dropdown-item {
-  //   text-align: center!important;
-  // }
+  .dropdown-menu {
+    text-align: center;
+  }
 }
 .navbar {
   padding: 0 10px;
@@ -372,7 +372,7 @@ margin-top: 100px;
     min-height: 75px;
     margin: 0 auto;
     text-align: center;
-    filter: grayscale(1);
+    // filter: grayscale(1);
     &:hover {
       filter: grayscale(0);
       transition: filter .4s ease;

@@ -24,7 +24,6 @@ body .seller-intro-button a {
 body .seller-intro-button a:hover {
   background-color: transparent;
   color: #000;
-  -webkit-transition: background-color 0.5s ease-in-out;
   transition: background-color 0.5s ease-in-out;
 }
 body .custom-heading {
@@ -71,8 +70,10 @@ nav li {
 nav li:hover {
   border-radius: 5px;
   background-color: rgba(108, 117, 125, 0.3);
-  -webkit-transition: background-color 0.5s ease-in-out;
   transition: background-color 0.5s ease-in-out;
+}
+nav .dropdown-menu {
+  text-align: center;
 }
 
 .navbar {
@@ -115,13 +116,8 @@ nav li:hover {
   color: rgba(108, 117, 125, 0.3);
 }
 .overall-overlay .close-icon:hover {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
   transform: scale(1.2);
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 .overall-overlay .about-works-case {
   width: 80%;
@@ -171,12 +167,9 @@ nav li:hover {
 .overall-overlay .about-works-case .bottom-close:hover {
   background-color: #000;
   color: white;
-  -webkit-transition: color 0.7s ease;
   transition: color 0.7s ease;
 }
 .overall-overlay .about-works-case .bottom-close .fas {
-  -webkit-transform: translate(1px, 1px);
-  -ms-transform: translate(1px, 1px);
   transform: translate(1px, 1px);
 }
 .overall-overlay .about-works-case .works-image {
@@ -204,7 +197,6 @@ nav li:hover {
   height: 230px;
   border-radius: 2%;
   margin: 25px auto 30px;
-  -webkit-filter: grayscale(1);
   filter: grayscale(1);
   box-shadow: 0 0 15px 1px #4e4b4b !important;
   /* box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 0, 0, 0.06); */
@@ -230,7 +222,6 @@ nav li:hover {
 .seller-intro-button a:hover {
   background-color: transparent;
   color: #000;
-  -webkit-transition: background-color 0.5s ease-in-out;
   transition: background-color 0.5s ease-in-out;
 }
 
@@ -255,10 +246,7 @@ nav li:hover {
   text-align: center;
 }
 .social-icons:hover {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
   transform: scale(1.2);
-  -webkit-transition: 0.5s ease-in-out transform;
   transition: 0.5s ease-in-out transform;
 }
 .social-icons .fab {
@@ -266,13 +254,7 @@ nav li:hover {
 }
 .social-icons-case {
   min-width: 300px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .social-icons-case a {
@@ -300,10 +282,7 @@ nav li:hover {
   /* margin:0 40px; */
 }
 .icons-ball:hover {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
   transform: scale(1.2);
-  -webkit-transition: 0.5s ease-in-out transform;
   transition: 0.5s ease-in-out transform;
 }
 
@@ -424,9 +403,6 @@ header {
   position: relative;
   top: 10px;
   padding: 5px 10px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
@@ -458,16 +434,10 @@ header {
   min-height: 75px;
   margin: 0 auto;
   text-align: center;
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
 }
 .tools-image-case:hover {
-  -webkit-filter: grayscale(0);
   filter: grayscale(0);
-  -webkit-transition: -webkit-filter 0.4s ease;
-  transition: -webkit-filter 0.4s ease;
   transition: filter 0.4s ease;
-  transition: filter 0.4s ease, -webkit-filter 0.4s ease;
 }
 .tools-image-case .tools-icon {
   width: 200px;
@@ -490,13 +460,8 @@ header {
   box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 0, 0, 0.06);
 }
 .chen-image:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
   transform: scale(1.1);
-  -webkit-transition: -webkit-transform 0.8s ease-in-out;
-  transition: -webkit-transform 0.8s ease-in-out;
   transition: transform 0.8s ease-in-out;
-  transition: transform 0.8s ease-in-out, -webkit-transform 0.8s ease-in-out;
 }
 
 .float-top-button {
@@ -515,13 +480,8 @@ header {
   box-shadow: 0 0 15px 1px #6c757d;
 }
 .float-top-button:hover {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
   transform: scale(1.2);
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-  transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
 footer {
@@ -540,13 +500,7 @@ footer .flex, footer .block {
 }
 
 .footer-icons-case {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -568,13 +522,7 @@ footer .flex, footer .block {
 }
 
 .flex {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-  -webkit-justify-content: space-evenly;
-  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
 }
 
