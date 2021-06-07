@@ -3,7 +3,7 @@ $(document).ready( function() {
   //navbar background toggle function.
   $(window).scroll(function(){
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-      $("#myNav").css("backgroundColor","#ea4d99");
+      $("#myNav").css("backgroundColor","white");
       $("#myNav").css("boxShadow", "0 0 15px 1px hsl(0, 2%, 89%)");
     }
     else {

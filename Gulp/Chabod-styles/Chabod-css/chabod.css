@@ -11,10 +11,10 @@ body nav li:hover {
   background-color: rgba(234, 76, 153, 0.3);
 }
 body .social-icons {
-  border: 2px solid #ea4d99;
+  border: 2px solid #000;
 }
 body .social-icons .fab {
-  color: #ea4d99;
+  color: #000;
 }
 body .seller-intro-button a {
   color: white;
@@ -43,22 +43,22 @@ body .float-top-button {
   background-color: #ea4d99;
 }
 body footer {
-  background-color: #eaeaea;
+  background-color: #886877;
 }
 body footer .footer-text-case {
-  color: #6c757d;
+  color: white;
 }
 body footer .last-text {
   color: #6c757d;
 }
 body footer .fa-heart {
-  color: #ea4d99;
+  color: rgba(234, 76, 153, 0.3);
 }
 body footer .icons-ball {
-  border: 2px solid #ea4d99;
+  border: 2px solid #f5d6e5;
 }
 body footer .fab {
-  color: #ea4d99;
+  color: #f5d6e5;
 }
 
 nav li {
@@ -71,9 +71,6 @@ nav li:hover {
   border-radius: 5px;
   background-color: rgba(108, 117, 125, 0.3);
   transition: background-color 0.5s ease-in-out;
-}
-nav .dropdown-menu {
-  text-align: center;
 }
 
 .navbar {
@@ -367,6 +364,27 @@ header {
   min-height: 200px;
 }
 
+.services {
+  padding: 30px 0;
+}
+.services .plain-cards {
+  box-shadow: 0 0 15px 1px #3a3131 !important;
+  text-align: left;
+  border-bottom: 3px solid #ea4d99;
+}
+.services-icon-case {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(234, 76, 153, 0.3);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px 0 0 20px;
+}
+.services-icon {
+  width: 40px;
+  height: 40px;
+}
+
 .works-section {
   padding: 30px 0;
 }
@@ -434,6 +452,7 @@ header {
   min-height: 75px;
   margin: 0 auto;
   text-align: center;
+  filter: grayscale(1);
 }
 .tools-image-case:hover {
   filter: grayscale(0);

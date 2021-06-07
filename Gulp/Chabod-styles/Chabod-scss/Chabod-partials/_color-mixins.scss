@@ -8,6 +8,9 @@
 // pink theme color
 $girly--pinky: #ea4d99;
 $trans--gp : rgba(234, 76, 153, .3);
+$footer : #886877;
+$footer--icons : #f5d6e5;
+
 
 // bold--purp
 // bo--blue
@@ -24,9 +27,9 @@ $trans--gp : rgba(234, 76, 153, .3);
     //     color: ;
     // }
     .social-icons {
-        border: 2px solid $girly--pinky;
+        border: 2px solid c-var.$night;
         .fab {
-            color: $girly--pinky;
+            color: c-var.$night;
         }
     }
     .seller-intro {
@@ -65,21 +68,21 @@ $trans--gp : rgba(234, 76, 153, .3);
         background-color: $girly--pinky;
     }
     footer {
-        background-color: #eaeaea;
+        background-color: $footer;
         .footer-text-case {
-            color: c-var.$custom-grey;
+            color: c-var.$vanilla;
         }
         .last-text {
             color: c-var.$custom-grey;
         }
         .fa-heart {
-        color: $girly--pinky;
+            color: $trans--gp;
         }
         .icons-ball {
-            border: 2px solid $girly--pinky;
+            border: 2px solid $footer--icons;
         }
         .fab {
-            color: $girly--pinky;
+            color: $footer--icons;
         }
     }
 }

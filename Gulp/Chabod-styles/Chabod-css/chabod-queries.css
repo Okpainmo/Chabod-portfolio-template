@@ -55,6 +55,10 @@
     margin-right: 7px;
   }
 
+  nav .dropdown-menu {
+    text-align: center;
+  }
+
   .navbar-toggler {
     padding: 0.25rem 0 0.25rem 0.75rem;
   }
