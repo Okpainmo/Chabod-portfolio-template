@@ -10,19 +10,19 @@ body {
   padding: 0;
   font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-body custom-btn nav li:hover {
-  background-color: rgba(253, 156, 203, 0.3);
+body nav li:hover {
+  background-color: #c3cee2;
 }
 body .social-icons {
-  border: 2px solid #ea4d99;
+  border: 2px solid #4a80e2;
 }
 body .social-icons .fab {
-  color: #ea4d99;
+  color: #4a80e2;
 }
 body .seller-intro-button a {
   color: white;
-  border: 2px solid #ea4d99;
-  background-color: #ea4d99;
+  border: 2px solid #4a80e2;
+  background-color: #4a80e2;
 }
 body .seller-intro-button a:hover {
   background-color: transparent;
@@ -31,10 +31,10 @@ body .seller-intro-button a:hover {
 }
 body .custom-heading {
   color: #6c757d;
-  border-left: 5px #ea4d99 solid;
+  border-left: 5px #4a80e2 solid;
 }
 body .custom-link {
-  color: #ea4d99;
+  color: #4a80e2;
 }
 body .custom-link:hover {
   color: #000;
@@ -42,18 +42,26 @@ body .custom-link:hover {
 body .works-section .row h5 {
   color: #6c757d;
 }
+body nav li:hover {
+  border-radius: 5px;
+  background-color: #c3cee2;
+  transition: background-color 0.5s ease-in-out;
+}
 body .custom-btn-case .custom-btn {
-  background-color: #ea4d99;
+  background-color: #4a80e2;
   color: white;
 }
 body .services .plain-cards {
-  border-bottom: 3px solid #ea4d99;
+  border-bottom: 3px solid #4a80e2;
+}
+body .services-icon-case {
+  background-color: #c3cee2;
 }
 body .float-top-button {
-  background-color: #ea4d99;
+  background-color: #4a80e2;
 }
 body footer {
-  background-color: #886877;
+  background-color: #0d1425;
 }
 body footer .footer-text-case {
   color: white;
@@ -62,13 +70,13 @@ body footer .last-text {
   color: white;
 }
 body footer .fa-heart {
-  color: #ea4d99;
+  color: #4a80e2;
 }
 body footer .icons-ball {
-  border: 2px solid #f5d6e5;
+  border: 2px solid #7e8bb1;
 }
 body footer .fab {
-  color: #f5d6e5;
+  color: #7e8bb1;
 }
 
 nav li {
@@ -392,15 +400,38 @@ header {
 }
 
 .contact-form-case {
-  background-color: white;
+  background-color: transparent;
+  padding-top: 30px;
   text-align: center;
 }
-.contact-form-case .seller-logo {
-  margin: 25px 0;
+.contact-form-case .form-parent {
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px;
 }
-.contact-form-case .seller-logo img {
+.contact-form-case .form-parent .card {
+  box-shadow: 0 0 15px 1px #e4e2e2 !important;
+  padding: 20px;
+  width: 400px;
+  margin: 0 auto;
+}
+.contact-form-case .form-parent .form-title {
+  margin: 0 0 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.contact-form-case .form-parent form {
+  text-align: left;
+}
+.contact-form-case .form-parent .seller-logo-case {
+  margin: 25px 0 0;
+}
+.contact-form-case .form-parent .seller-logo-case img {
   width: 60px;
   height: 70px;
+}
+.contact-form-case .form-parent .custom-btn-case {
+  margin: 30px 0 0;
 }
 
 .services {
@@ -420,7 +451,7 @@ header {
 .services-icon-case {
   width: 60px;
   height: 60px;
-  background-color: rgba(253, 156, 203, 0.3);
+  background-color: rgba(108, 117, 125, 0.3);
   border-radius: 5px;
   padding: 10px;
   margin: 20px 0 0 20px;

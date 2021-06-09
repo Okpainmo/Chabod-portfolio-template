@@ -12,7 +12,7 @@ $gp--footer--background : #886877;
 $gp--footer--icons : #f5d6e5;
 
 
-@mixin girly--pinky() {custom-btn
+@mixin girly--pinky() {
     nav {
         li {
             &:hover {
@@ -58,6 +58,15 @@ $gp--footer--icons : #f5d6e5;
             }
         }
     }
+    nav {
+        li {
+            &:hover {
+              border-radius: 5px;
+              background-color: $trans--gp;
+              transition: background-color .5s ease-in-out;
+            }
+        }
+    }
     .custom-btn-case {
         .custom-btn {
             background-color: $girly--pinky;
@@ -67,6 +76,9 @@ $gp--footer--icons : #f5d6e5;
     .services {
         .plain-cards {
             border-bottom: 3px solid $girly--pinky;
+        }
+        &-icon-case {
+            background-color: $trans--gp;
         }
     }
     .float-top-button {
@@ -94,22 +106,198 @@ $gp--footer--icons : #f5d6e5;
 
 // // purple theme (bold-purp)
 
-// $bold-purp: purple;
-// $trans--bp
-// $bp--footer--background
-// $bp--footer-icons
+$bold--purp: #894d9c;
+$trans--bp: #ddc6e0;
+$bp--footer--background: #342638;
+$bp--footer--icons: #f0d6f5;
 
-// @mixin bold--purp () {
-
-// }
+@mixin bold--purp() {
+    nav {
+        li {
+            &:hover {
+                background-color: $trans--bp;
+            }
+        }
+    }
+    .social-icons {
+        border: 2px solid $bold--purp;
+        .fab {
+            color: $bold--purp;
+        }
+    }
+    .seller-intro {
+        // color: c-var.$custom-grey;
+        &-button {
+          a {
+            color: c-var.$vanilla;
+            border: 2px solid $bold--purp;
+            background-color: $bold--purp;
+          }
+          a:hover {
+            background-color: c-var.$trans;
+            color: c-var.$night;
+            transition: background-color .5s ease-in-out;
+          }
+        }
+    }
+    .custom-heading {
+        color: c-var.$custom-grey;
+        border-left: 5px $bold--purp solid;
+    }
+    .custom-link {
+        color: $bold--purp;
+        &:hover {
+          color: c-var.$night;
+        }
+    }
+    .works-section {
+        .row {
+            h5 {
+                color: c-var.$custom-grey;
+            }
+        }
+    }
+    nav {
+        li {
+            &:hover {
+              border-radius: 5px;
+              background-color: $trans--bp;
+              transition: background-color .5s ease-in-out;
+            }
+        }
+    }
+    .custom-btn-case {
+        .custom-btn {
+            background-color: $bold--purp;
+            color: c-var.$vanilla;
+        }
+    }
+    .services {
+        .plain-cards {
+            border-bottom: 3px solid $bold--purp;
+        }
+        &-icon-case {
+            background-color: $trans--bp;
+        }
+    }
+    .float-top-button {
+        background-color: $bold--purp
+    }
+    footer {
+        background-color: $bp--footer--background;
+        .footer-text-case {
+            color: c-var.$vanilla;
+        }
+        .last-text {
+            color: c-var.$vanilla;
+        }
+        .fa-heart {
+            color: $bold--purp;
+        }
+        .icons-ball {
+            border: 2px solid $bp--footer--icons;
+        }
+        .fab {
+            color: $bp--footer--icons;
+        }
+    }
+}
 
 // // blue theme (blue--dude)
 
-// $blue-dude:;
-// $trans-bd:;
-// $bd--footer--background:;
-// $bd--footer-icons :;
+$blu--dude: #4a80e2;
+$trans--bd: #c3cee2;
+$bd--footer--background: #0d1425;
+$bd--footer--icons : #7e8bb1;
 
-// @mixin blue--dude() {
-
-// }
+@mixin blu--dude() {
+    nav {
+        li {
+            &:hover {
+                background-color: $trans--bd;
+            }
+        }
+    }
+    .social-icons {
+        border: 2px solid $blu--dude;
+        .fab {
+            color: $blu--dude;
+        }
+    }
+    .seller-intro {
+        // color: c-var.$custom-grey;
+        &-button {
+          a {
+            color: c-var.$vanilla;
+            border: 2px solid $blu--dude;
+            background-color: $blu--dude;
+          }
+          a:hover {
+            background-color: c-var.$trans;
+            color: c-var.$night;
+            transition: background-color .5s ease-in-out;
+          }
+        }
+    }
+    .custom-heading {
+        color: c-var.$custom-grey;
+        border-left: 5px $blu--dude solid;
+    }
+    .custom-link {
+        color: $blu--dude;
+        &:hover {
+          color: c-var.$night;
+        }
+    }
+    .works-section {
+        .row {
+            h5 {
+                color: c-var.$custom-grey;
+            }
+        }
+    }
+    nav {
+        li {
+            &:hover {
+              border-radius: 5px;
+              background-color: $trans--bd;
+              transition: background-color .5s ease-in-out;
+            }
+        }
+    }
+    .custom-btn-case {
+        .custom-btn {
+            background-color: $blu--dude;
+            color: c-var.$vanilla;
+        }
+    }
+    .services {
+        .plain-cards {
+            border-bottom: 3px solid $blu--dude
+        }
+        &-icon-case {
+            background-color: $trans--bd;
+        }
+    }
+    .float-top-button {
+        background-color: $blu--dude;
+    }
+    footer {
+        background-color: $bd--footer--background;
+        .footer-text-case {
+            color: c-var.$vanilla;
+        }
+        .last-text {
+            color: c-var.$vanilla;
+        }
+        .fa-heart {
+            color: $blu--dude
+        }
+        .icons-ball {
+            border: 2px solid $bd--footer--icons;
+        }
+        .fab {
+            color: $bd--footer--icons;
+        }
+    }
+}

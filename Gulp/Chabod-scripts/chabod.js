@@ -2,7 +2,7 @@ $(document).ready( function() {
   
   //navbar background toggle function.
   $(window).scroll(function(){
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
       $("#myNav").css("backgroundColor","white");
       $("#myNav").css("boxShadow", "0 0 15px 1px hsl(0, 2%, 89%)");
     }
@@ -78,6 +78,7 @@ $("#work1").click(
     $("#workInfo1").css("display", "block"),
     $("#workInfo2").css("display", "none"),
     $("#workInfo3").css("display", "none"),
+    $(".contact-form-case").css("display", "none")
     $("#popUpOverlay").fadeIn() 
   }
 ),
@@ -86,6 +87,7 @@ $("#work1").click(
 $("#work2").click(
   function() {
     $("#workInfo1").css("display", "none"),
+    $(".contact-form-case").css("display", "none")
     $("#workInfo2").css("display", "block"),
     $("#workInfo3").css("display", "none"),
     $("#popUpOverlay").fadeIn() 
@@ -97,7 +99,19 @@ $("#work3").click(
 function() {
     $("#workInfo1").css("display", "none"),
     $("#workInfo2").css("display", "none"),
+    $(".contact-form-case").css("display", "none")
     $("#workInfo3").css("display", "block"),
+    $("#popUpOverlay").fadeIn() 
+  }
+), 
+
+// to display contact form
+$("#form-btn").click(
+  function() {
+    $("#workInfo1").css("display", "none"),
+    $("#workInfo2").css("display", "none"),
+    $("#workInfo3").css("display", "none"),
+    $(".contact-form-case").css("display", "block")
     $("#popUpOverlay").fadeIn() 
   }
 )

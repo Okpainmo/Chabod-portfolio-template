@@ -89,6 +89,10 @@
     width: 70%;
   }
 
+  .contact-form-case .form-parent {
+    width: 100%;
+  }
+
   .works-section .card-pic-case-child {
     min-height: 300px;
   }
@@ -121,6 +125,16 @@
 
   .works-section .card-pic-case-child {
     min-height: 260px;
+  }
+
+  .contact-form-case .form-parent {
+    padding: 20px 0;
+  }
+  .contact-form-case .form-parent .col-lg {
+    padding: 0;
+  }
+  .contact-form-case .form-parent .col-lg .card {
+    width: 100%;
   }
 
   .overall-overlay {
