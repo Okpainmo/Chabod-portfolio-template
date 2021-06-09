@@ -1,21 +1,18 @@
 @use "color-variables" as c-var;
 
-// three specially classified mixins for customizing the whole page.
-// just assign a different mixin to the "body tag" and the whole page will adjust to a different color theme.
-// #cool_right?
+/** three specially classified mixins for customizing the whole page.
+just assign a different mixin to the "body" tag and the whole page will adjust to a different color theme.
+#cool_right? **/
 
 
-// pink theme color
+// pink theme (girly--pinky)
 $girly--pinky: #ea4d99;
-$trans--gp : rgba(234, 76, 153, .3);
-$footer : #886877;
-$footer--icons : #f5d6e5;
+$trans--gp : rgba(253, 156, 203, .3);
+$gp--footer--background : #886877;
+$gp--footer--icons : #f5d6e5;
 
 
-// bold--purp
-// bo--blue
-
-@mixin girly--pinky() {
+@mixin girly--pinky() {custom-btn
     nav {
         li {
             &:hover {
@@ -23,13 +20,10 @@ $footer--icons : #f5d6e5;
             }
         }
     }
-    // .nav-link {
-    //     color: ;
-    // }
     .social-icons {
-        border: 2px solid c-var.$night;
+        border: 2px solid $girly--pinky;
         .fab {
-            color: c-var.$night;
+            color: $girly--pinky;
         }
     }
     .seller-intro {
@@ -64,25 +58,58 @@ $footer--icons : #f5d6e5;
             }
         }
     }
+    .custom-btn-case {
+        .custom-btn {
+            background-color: $girly--pinky;
+            color: c-var.$vanilla;
+        }
+    }
+    .services {
+        .plain-cards {
+            border-bottom: 3px solid $girly--pinky;
+        }
+    }
     .float-top-button {
         background-color: $girly--pinky;
     }
     footer {
-        background-color: $footer;
+        background-color: $gp--footer--background;
         .footer-text-case {
             color: c-var.$vanilla;
         }
         .last-text {
-            color: c-var.$custom-grey;
+            color: c-var.$vanilla;
         }
         .fa-heart {
-            color: $trans--gp;
+            color: $girly--pinky;
         }
         .icons-ball {
-            border: 2px solid $footer--icons;
+            border: 2px solid $gp--footer--icons;
         }
         .fab {
-            color: $footer--icons;
+            color: $gp--footer--icons;
         }
     }
 }
+
+// // purple theme (bold-purp)
+
+// $bold-purp: purple;
+// $trans--bp
+// $bp--footer--background
+// $bp--footer-icons
+
+// @mixin bold--purp () {
+
+// }
+
+// // blue theme (blue--dude)
+
+// $blue-dude:;
+// $trans-bd:;
+// $bd--footer--background:;
+// $bd--footer-icons :;
+
+// @mixin blue--dude() {
+
+// }

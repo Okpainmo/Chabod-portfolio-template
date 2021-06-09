@@ -62,7 +62,7 @@ nav {
   }
   .close-icon {
     font-size: 40px;
-    color: c-var.$trans-ash;
+    color: c-var.$vanilla;
     &:hover {
       transform: scale(1.2);
       transition: transform .3s ease;
@@ -285,6 +285,22 @@ margin-top: 100px;
   margin-bottom: 30px;
   border-left: 5px c-var.$night solid;
 }
+.custom-btn-case {
+  text-align: center;
+  margin: 50px 0 0;
+    .custom-btn {
+      padding: 10px 40px;
+      font-size: 20px ;
+      background-color: c-var.$night;
+      color: c-var.$vanilla;
+      border-radius: 5px;
+      box-shadow: 0 6px 9px -5px c-var.$night;
+      &:hover {
+        transform: scale(1.08);
+        transition: ease .7s transform;
+      }
+    }
+}
 .more-about-seller {
   width: 80%;
   color: c-var.$night;
@@ -304,12 +320,29 @@ margin-top: 100px;
     min-height: 200px;
   }
 }
+.contact-form-case {
+  background-color: c-var.$vanilla;
+  text-align: center;
+  .seller-logo {
+    margin: 25px 0;
+  }
+  .seller-logo img {
+    width: 60px;
+    height: 70px;
+  }
+}
 .services {
   padding: 30px 0;
   .plain-cards {
-    box-shadow: 0 0 15px 1px hsl(0, 8%, 21%)!important; 
+    box-shadow: 0 0 10px -2px hsl(0, 1%, 44%)!important; 
     text-align: left;
-    border-bottom: 3px solid c-mix.$girly--pinky;
+    border-bottom: 3px solid c-var.$night;
+    background-size: cover;
+    border: 0;
+    border-radius: 0;
+  }
+  .plain-cards-overlay {
+    background-color: rgba(255, 255, 255, 0.85);
   }
   &-icon-case{
     width: 60px;
@@ -325,12 +358,16 @@ margin-top: 100px;
   } 
 }
 .works-section {
-  padding: 30px 0;
-  .col-lg-4 {
-    margin-bottom: 40px;
+  background-image: url(../../Images/pix13.jpg);
+  background-size: cover;
+  .works-section-overlay {
+    background-color: rgba(255, 255, 255, 0.85);
+    height: inherit;
+    padding: 30px 0;
   }
   .row .card {
     border: none;
+    background-color: c-var.$trans;
     .card-body {
       padding: 15px 0 0;
     }
@@ -383,11 +420,11 @@ margin-top: 100px;
   a:hover {
     text-decoration: none;
   }
-} 0, 0.3), 0 0 15px rgba(0, 0, 0, 0.06);
-&:hover {
-  transform: scale(1.1);
-  transition: transform .8s ease-in-out;
-}
+} 
+// &:hover {
+//   transform: scale(1.1);
+//   transition: transform .8s ease-in-out;
+// }
 // &-case {
 //   width: initial;
 //   height: initial;
@@ -398,7 +435,6 @@ margin-top: 100px;
 //   display: inline-block;
 // }
 // }
-}
 .float-top-button {
 background-color: rgba(0, 0, 0, 0.7);
 width: 50px;

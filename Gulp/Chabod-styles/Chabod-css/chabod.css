@@ -1,3 +1,6 @@
+/** three specially classified mixins for customizing the whole page.
+just assign a different mixin to the "body" tag and the whole page will adjust to a different color theme.
+#cool_right? **/
 html {
   scroll-behavior: smooth;
 }
@@ -7,14 +10,14 @@ body {
   padding: 0;
   font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-body nav li:hover {
-  background-color: rgba(234, 76, 153, 0.3);
+body custom-btn nav li:hover {
+  background-color: rgba(253, 156, 203, 0.3);
 }
 body .social-icons {
-  border: 2px solid #000;
+  border: 2px solid #ea4d99;
 }
 body .social-icons .fab {
-  color: #000;
+  color: #ea4d99;
 }
 body .seller-intro-button a {
   color: white;
@@ -39,6 +42,13 @@ body .custom-link:hover {
 body .works-section .row h5 {
   color: #6c757d;
 }
+body .custom-btn-case .custom-btn {
+  background-color: #ea4d99;
+  color: white;
+}
+body .services .plain-cards {
+  border-bottom: 3px solid #ea4d99;
+}
 body .float-top-button {
   background-color: #ea4d99;
 }
@@ -49,10 +59,10 @@ body footer .footer-text-case {
   color: white;
 }
 body footer .last-text {
-  color: #6c757d;
+  color: white;
 }
 body footer .fa-heart {
-  color: rgba(234, 76, 153, 0.3);
+  color: #ea4d99;
 }
 body footer .icons-ball {
   border: 2px solid #f5d6e5;
@@ -110,7 +120,7 @@ nav li:hover {
 }
 .overall-overlay .close-icon {
   font-size: 40px;
-  color: rgba(108, 117, 125, 0.3);
+  color: white;
 }
 .overall-overlay .close-icon:hover {
   transform: scale(1.2);
@@ -343,6 +353,23 @@ header {
   border-left: 5px #000 solid;
 }
 
+.custom-btn-case {
+  text-align: center;
+  margin: 50px 0 0;
+}
+.custom-btn-case .custom-btn {
+  padding: 10px 40px;
+  font-size: 20px;
+  background-color: #000;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 6px 9px -5px #000;
+}
+.custom-btn-case .custom-btn:hover {
+  transform: scale(1.08);
+  transition: ease 0.7s transform;
+}
+
 .more-about-seller {
   width: 80%;
   color: #000;
@@ -364,18 +391,36 @@ header {
   min-height: 200px;
 }
 
+.contact-form-case {
+  background-color: white;
+  text-align: center;
+}
+.contact-form-case .seller-logo {
+  margin: 25px 0;
+}
+.contact-form-case .seller-logo img {
+  width: 60px;
+  height: 70px;
+}
+
 .services {
   padding: 30px 0;
 }
 .services .plain-cards {
-  box-shadow: 0 0 15px 1px #3a3131 !important;
+  box-shadow: 0 0 10px -2px #716f6f !important;
   text-align: left;
-  border-bottom: 3px solid #ea4d99;
+  border-bottom: 3px solid #000;
+  background-size: cover;
+  border: 0;
+  border-radius: 0;
+}
+.services .plain-cards-overlay {
+  background-color: rgba(255, 255, 255, 0.85);
 }
 .services-icon-case {
   width: 60px;
   height: 60px;
-  background-color: rgba(234, 76, 153, 0.3);
+  background-color: rgba(253, 156, 203, 0.3);
   border-radius: 5px;
   padding: 10px;
   margin: 20px 0 0 20px;
@@ -386,13 +431,17 @@ header {
 }
 
 .works-section {
-  padding: 30px 0;
+  background-image: url(../../Images/pix13.jpg);
+  background-size: cover;
 }
-.works-section .col-lg-4 {
-  margin-bottom: 40px;
+.works-section .works-section-overlay {
+  background-color: rgba(255, 255, 255, 0.85);
+  height: inherit;
+  padding: 30px 0;
 }
 .works-section .row .card {
   border: none;
+  background-color: transparent;
 }
 .works-section .row .card .card-body {
   padding: 15px 0 0;
@@ -445,6 +494,26 @@ header {
 }
 .tools-section a:hover {
   text-decoration: none;
+}
+
+.float-top-button {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 50px;
+  display: none;
+  height: 50px;
+  position: fixed;
+  padding: 8px;
+  border-radius: 100%;
+  text-align: center;
+  bottom: 30px;
+  right: 20px;
+  color: white;
+  font-size: 25px;
+  box-shadow: 0 0 15px 1px #6c757d;
+}
+.float-top-button:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s ease-in-out;
 }
 
 .tools-image-case {

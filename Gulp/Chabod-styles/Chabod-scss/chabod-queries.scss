@@ -14,6 +14,15 @@
       margin-bottom: 0;
     }
   }
+  .services {
+    .container {
+      padding: 0;
+    }
+  }
+  .col-lg-4 {
+    margin-bottom: 40px;
+    padding: 5px;
+  }
   .works-section {
     .card-pic-case-child {
       min-height: 350px;
@@ -144,9 +153,9 @@
       padding: 0 15px;
     }
   }
-  .sm-padding {
-      padding: 5px;
-  }
+  // .sm-padding {
+  //     padding: 5px;
+  // }
   .seller-image-case {
       width: 200px;
   }
